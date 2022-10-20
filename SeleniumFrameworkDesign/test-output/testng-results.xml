@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-17T21:59:26 IST" name="Suite" finished-at="2022-09-17T21:59:36 IST" duration-ms="10095">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidations.loginFailureValidations()[pri:0, instance:Selenium.Tests.ErrorValidations@4738a206]" name="loginFailureValidations" class="Selenium.Tests.ErrorValidations"/>
+      </group> <!-- ErrorHandling -->
+    </groups>
+    <test started-at="2022-09-17T21:59:26 IST" name="Submit Order Test" finished-at="2022-09-17T21:59:36 IST" duration-ms="10095">
+      <class name="Selenium.Tests.ErrorValidations">
+        <test-method is-config="true" signature="lauchApplication()[pri:0, instance:Selenium.Tests.ErrorValidations@4738a206]" started-at="2022-09-17T21:59:26 IST" name="lauchApplication" finished-at="2022-09-17T21:59:34 IST" duration-ms="8636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lauchApplication -->
+        <test-method signature="loginFailureValidations()[pri:0, instance:Selenium.Tests.ErrorValidations@4738a206]" started-at="2022-09-17T21:59:34 IST" name="loginFailureValidations" finished-at="2022-09-17T21:59:36 IST" duration-ms="1238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailureValidations -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.Tests.ErrorValidations@4738a206]" started-at="2022-09-17T21:59:36 IST" name="tearDown" finished-at="2022-09-17T21:59:36 IST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Selenium.Tests.ErrorValidations -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>
