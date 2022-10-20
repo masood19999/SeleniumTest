@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="5">
+  <listeners>
+  		<listener class-name="test.Listeners" />
+  </listeners>
+  <parameter name="URL" value="suitelevelurl.com" /> <!--  all test methods can access this url -->
+  <test name="HomeLoan">
+    <classes>
+      <class name="test.TestNGBasics"/>
+      <class name="test.test2" />
+      <class name="test.test4">
+      	<methods>
+      		<include name="webLoginHomeLoan"/>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+  <test name="CarLoan">
+  <parameter name="URL" value="carloanlevl.com" /> <!-- url is accessed only for this test -->
+  	<classes>
+	  	<class name="test.test3">
+	  		<methods>
+	  			
+	  			<exclude name="mobile.*"/> <!--  exclude all the methods which starts from the name mobile -->
+	  		</methods>
+	  	</class>
+  	</classes>
+  </test>
+</suite> 
